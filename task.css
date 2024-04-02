@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+:root{
+    --designcolor:rgb(203, 108, 230);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#design{
+    width: 90px;
+    height: 50px;
+    background-color:var(--designcolor);
+    float: right;
+    display: block;
+    align-self: flex-end;
+    
+
+}
+#rightside{
+    width: 10%;
+    height: 100%;
+    border-top: 25px solid rgb(203, 108, 230);
+    border-bottom: 25px solid rgb(203, 108, 230);
+    border-left: 25px solid rgb(255, 255, 255);
+
+   
+}
+
+#company{
+    display: block;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin: 2%;
+    
+}
+#company>h3{
+    background-color: var(--designcolor);
+    color: aliceblue;
+    font-weight: 900;
+    padding: 10px 30px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+#company>p{
+    padding: 10px 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+hr{
+    
+    border-top: 5px dashed  rgb(175, 152, 179);
+    width: 50%;
+  }
+  #meet{
+    margin: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+  #meet>p{
+    background-color: var(--designcolor);
+    color: aliceblue;
+    
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size:16px ;
+
+  }
+#meet>h3{
+    font-weight: 700;
+}
+img{
+    width: 19wv;
+    height: 19vh;
+}
+#userimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    gap: 10vh;
+   
+
+}
+#userimg >div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40%;
+    font-size: 14px;
+    
+    
+}
+.imgdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   
+}
+.imgdiv>img{
+    margin-bottom: 10px;
+}
+.imgdiv>:nth-child(3){
+   color: rgb(207, 186, 209);
+}
+.imgdiv>:nth-child(2){
+  font-weight: 600;
+}
+    
