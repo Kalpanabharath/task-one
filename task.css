@@ -13,25 +13,51 @@ body{
     justify-content: center;
 }
 
-#design{
+
+
+.design{
     width: 90px;
     height: 50px;
     background-color:var(--designcolor);
     float: right;
     display: block;
     align-self: flex-end;
+   
     
 
 }
-#rightside{
+.designleft{
+    width: 90px;
+    height: 50px;
+    background-color:var(--designcolor);
+    display: block;
+    display: flex;
+    justify-content: end;
+ 
+    
+    
+    
+   
+
+
+}
+.leftside{
+    width: 10%;
+    height: 100%;
+    border-top: 25px solid rgb(203, 108, 230);
+    border-bottom: 25px solid rgb(203, 108, 230);
+    border-right: 25px solid rgb(255, 255, 255);
+ 
+
+
+}
+.rightside{
     width: 10%;
     height: 100%;
     border-top: 25px solid rgb(203, 108, 230);
     border-bottom: 25px solid rgb(203, 108, 230);
     border-left: 25px solid rgb(255, 255, 255);
-
-   
-}
+ }
 
 #company{
     display: block;
@@ -70,13 +96,16 @@ hr{
     flex-direction: column;
     gap: 40px;
   }
-  #meet>p{
+.head{
     background-color: var(--designcolor);
     color: aliceblue;
-    
     padding: 10px 30px;
     border-radius: 5px;
     font-size:16px ;
+   
+    
+    
+    
 
   }
 #meet>h3{
@@ -122,4 +151,31 @@ img{
 .imgdiv>:nth-child(2){
   font-weight: 600;
 }
+.designleft{
+    align-self: flex-start;
+   
+    
+}
+
+.makesameline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.makesameline>div{
+
+   
+    
+}
+
+
+
+
+  
+
+
+
+
+
+
     
