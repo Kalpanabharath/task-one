@@ -12,6 +12,11 @@ body{
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
+    
+}
+body>*{
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 
@@ -60,8 +65,9 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 50%;
-    margin: 2%;
+    width: 50vw;
+    min-width: 310px;
+   
     
 }
 #company>h3{
@@ -88,7 +94,7 @@ hr{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
   }
 .head{
     background-color: var(--designcolor);
@@ -103,16 +109,17 @@ hr{
     font-weight: 700;
 }
 img{
-    width: 19wv;
-    height: 19vh;
+    width: 16wv;
+    height: 16vh;
 }
 #userimg{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70vw;
-    gap: 5vh;
+    width: 80vw;
+    gap: 3vh;
+    overflow: hidden;
    
    
 
@@ -124,7 +131,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30%;
+    gap: 18%;
     font-size: 14px;
     
     
@@ -168,18 +175,130 @@ position: absolute;
 justify-content: center;
 align-items: center;
 
-/* margin: 12px; */
+
 
 }
-/* .sale{
+
+
+@media screen and (max-width: 426px){
+     body>*{
+      overflow-x: hidden;
+      overflow-x: hidden;
+     }
+    .design{
+        width: 30px;
+        height: 20px;
+      
+    }
+    #company{
+        width: 50vw;
+    }
+    .makesameline{
+        width: 100vw;
+    }
+    .designleft{
+        width: 30px;
+        height: 20px;
+        background-color:var(--designcolor);
+        display: block;
+        display: flex;
+        justify-content: end;
+     
+    }
+    .leftside{
+        width: 10%;
+        height: 100%;
+        border-top: 10px solid rgb(203, 108, 230);
+        border-bottom: 10px solid rgb(203, 108, 230);
+        border-right: 10px solid rgb(255, 255, 255);
+     
+    
+    
+    }
+    .rightside{
+        width: 10%;
+        height: 100%;
+        border-top: 10px solid rgb(203, 108, 230);
+        border-bottom: 10px solid rgb(203, 108, 230);
+        border-left: 10px solid rgb(255, 255, 255);
+     }
+    #company>h3{
+        font-size: small;
+        padding: 5px 5px;
+        font-weight: 500;
+    }
+    #company>p{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    hr{
+    
+        border-top: 2px dashed  rgb(175, 152, 179);
+        width: 50%;
+      }
+      #meet{
+        margin-top: 4%;
+        gap: 10px;
+}
+#meet>h3{
+    font-weight: 700;
+    font-size: 15px;
+}
+#userimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    gap: 3vh;
+   
+   
+
+}
+.imgdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+   
+}
+.head{
+    background-color: var(--designcolor);
+    color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size:10px ;
+   
+   
+ }
+ img{
+    width: 4wv;
+    height: 4vh;
+}
+#userimg >div{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    margin-top: 40px;
-    margin-bottom: 40px;
-} */
-
+    gap: 2%;
+    font-size: 14px;
+    width: 100vw;
+    
+    
+}
+.imgdiv>:nth-child(3){
+    color: rgb(207, 186, 209);
+    font-size: 8px;
+ }
+ .imgdiv>:nth-child(2){
+   font-weight: 600;
+   font-size: 7px;
+   
+ }
+ .designleft{
+     align-self: flex-start;
+    
+ }
 
 
 
@@ -192,3 +311,35 @@ align-items: center;
 
 
     
+}
+@media screen and (max-width: 769px){
+    
+    
+    #userimg >div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+        font-size: 14px;
+        width: 80%;
+        overflow-x: hidden;
+        
+        
+    }
+    .makesameline{
+        width: 100vw;
+    }
+    .imgdiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1px;
+       
+    }
+   
+    img{
+        width: 10wv;
+        height: 10vh;
+    }
+}
